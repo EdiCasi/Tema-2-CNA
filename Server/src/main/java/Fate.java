@@ -51,4 +51,14 @@ public class Fate
             return true;
         return false;
     }
+
+    @Override
+    public String toString()
+    {
+        return "Fate{" +
+                "dataStart=" + dataStart +
+                ", dataEnd=" + dataEnd +
+                ", name='" + name + '\'' +
+                '}';
+    }
 }

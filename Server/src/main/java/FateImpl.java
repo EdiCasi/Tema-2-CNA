@@ -44,6 +44,8 @@ public class FateImpl extends FateGrpc.FateImplBase
         if (!matcher.find())
             return false;
 
+        
+
         return true;
     }
 
@@ -64,7 +66,16 @@ public class FateImpl extends FateGrpc.FateImplBase
         {
             fates.add(new Fate(new Date(sc.next()),new Date(sc.next()),sc.next()));
         }
-        System.out.println(fates);
+    }
+
+    public String getFateFromDate(Date date)
+    {
+        for(Fate fate : fates)
+        {
+            if(fate.dateIsThisFate(date))
+                return fate.getName();
+        }
+        return "No fate for this date";
     }
 
 }

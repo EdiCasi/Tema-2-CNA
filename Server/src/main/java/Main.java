@@ -8,6 +8,6 @@ public class Main
 
         FateImpl fate = new FateImpl();
 
-        fate.readFatesFromFile("fates.txt");
+        fate.readFatesFromFile("src/main/resources/fates.txt");
     }
 }
