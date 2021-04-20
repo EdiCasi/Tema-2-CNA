@@ -27,28 +27,28 @@ public final class SpringGrpc {
   public static final String SERVICE_NAME = "Spring";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<proto.SpringOuterClass.DateRequest,
+  private static volatile io.grpc.MethodDescriptor<proto.SpringOuterClass.Empty,
       proto.SpringOuterClass.Reply> getReturnFateMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "returnFate",
-      requestType = proto.SpringOuterClass.DateRequest.class,
+      requestType = proto.SpringOuterClass.Empty.class,
       responseType = proto.SpringOuterClass.Reply.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<proto.SpringOuterClass.DateRequest,
+  public static io.grpc.MethodDescriptor<proto.SpringOuterClass.Empty,
       proto.SpringOuterClass.Reply> getReturnFateMethod() {
-    io.grpc.MethodDescriptor<proto.SpringOuterClass.DateRequest, proto.SpringOuterClass.Reply> getReturnFateMethod;
+    io.grpc.MethodDescriptor<proto.SpringOuterClass.Empty, proto.SpringOuterClass.Reply> getReturnFateMethod;
     if ((getReturnFateMethod = SpringGrpc.getReturnFateMethod) == null) {
       synchronized (SpringGrpc.class) {
         if ((getReturnFateMethod = SpringGrpc.getReturnFateMethod) == null) {
           SpringGrpc.getReturnFateMethod = getReturnFateMethod = 
-              io.grpc.MethodDescriptor.<proto.SpringOuterClass.DateRequest, proto.SpringOuterClass.Reply>newBuilder()
+              io.grpc.MethodDescriptor.<proto.SpringOuterClass.Empty, proto.SpringOuterClass.Reply>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "Spring", "returnFate"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  proto.SpringOuterClass.DateRequest.getDefaultInstance()))
+                  proto.SpringOuterClass.Empty.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   proto.SpringOuterClass.Reply.getDefaultInstance()))
                   .setSchemaDescriptor(new SpringMethodDescriptorSupplier("returnFate"))
@@ -88,7 +88,7 @@ public final class SpringGrpc {
 
     /**
      */
-    public void returnFate(proto.SpringOuterClass.DateRequest request,
+    public void returnFate(proto.SpringOuterClass.Empty request,
         io.grpc.stub.StreamObserver<proto.SpringOuterClass.Reply> responseObserver) {
       asyncUnimplementedUnaryCall(getReturnFateMethod(), responseObserver);
     }
@@ -99,7 +99,7 @@ public final class SpringGrpc {
             getReturnFateMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                proto.SpringOuterClass.DateRequest,
+                proto.SpringOuterClass.Empty,
                 proto.SpringOuterClass.Reply>(
                   this, METHODID_RETURN_FATE)))
           .build();
@@ -126,7 +126,7 @@ public final class SpringGrpc {
 
     /**
      */
-    public void returnFate(proto.SpringOuterClass.DateRequest request,
+    public void returnFate(proto.SpringOuterClass.Empty request,
         io.grpc.stub.StreamObserver<proto.SpringOuterClass.Reply> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getReturnFateMethod(), getCallOptions()), request, responseObserver);
@@ -153,7 +153,7 @@ public final class SpringGrpc {
 
     /**
      */
-    public proto.SpringOuterClass.Reply returnFate(proto.SpringOuterClass.DateRequest request) {
+    public proto.SpringOuterClass.Reply returnFate(proto.SpringOuterClass.Empty request) {
       return blockingUnaryCall(
           getChannel(), getReturnFateMethod(), getCallOptions(), request);
     }
@@ -180,7 +180,7 @@ public final class SpringGrpc {
     /**
      */
     public com.google.common.util.concurrent.ListenableFuture<proto.SpringOuterClass.Reply> returnFate(
-        proto.SpringOuterClass.DateRequest request) {
+        proto.SpringOuterClass.Empty request) {
       return futureUnaryCall(
           getChannel().newCall(getReturnFateMethod(), getCallOptions()), request);
     }
@@ -206,7 +206,7 @@ public final class SpringGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_RETURN_FATE:
-          serviceImpl.returnFate((proto.SpringOuterClass.DateRequest) request,
+          serviceImpl.returnFate((proto.SpringOuterClass.Empty) request,
               (io.grpc.stub.StreamObserver<proto.SpringOuterClass.Reply>) responseObserver);
           break;
         default:

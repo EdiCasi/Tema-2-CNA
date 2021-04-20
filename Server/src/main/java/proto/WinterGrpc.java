@@ -27,28 +27,28 @@ public final class WinterGrpc {
   public static final String SERVICE_NAME = "Winter";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<proto.WinterOuterClass.DateRequest,
+  private static volatile io.grpc.MethodDescriptor<proto.WinterOuterClass.Empty,
       proto.WinterOuterClass.Reply> getReturnFateMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "returnFate",
-      requestType = proto.WinterOuterClass.DateRequest.class,
+      requestType = proto.WinterOuterClass.Empty.class,
       responseType = proto.WinterOuterClass.Reply.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<proto.WinterOuterClass.DateRequest,
+  public static io.grpc.MethodDescriptor<proto.WinterOuterClass.Empty,
       proto.WinterOuterClass.Reply> getReturnFateMethod() {
-    io.grpc.MethodDescriptor<proto.WinterOuterClass.DateRequest, proto.WinterOuterClass.Reply> getReturnFateMethod;
+    io.grpc.MethodDescriptor<proto.WinterOuterClass.Empty, proto.WinterOuterClass.Reply> getReturnFateMethod;
     if ((getReturnFateMethod = WinterGrpc.getReturnFateMethod) == null) {
       synchronized (WinterGrpc.class) {
         if ((getReturnFateMethod = WinterGrpc.getReturnFateMethod) == null) {
           WinterGrpc.getReturnFateMethod = getReturnFateMethod = 
-              io.grpc.MethodDescriptor.<proto.WinterOuterClass.DateRequest, proto.WinterOuterClass.Reply>newBuilder()
+              io.grpc.MethodDescriptor.<proto.WinterOuterClass.Empty, proto.WinterOuterClass.Reply>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "Winter", "returnFate"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  proto.WinterOuterClass.DateRequest.getDefaultInstance()))
+                  proto.WinterOuterClass.Empty.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   proto.WinterOuterClass.Reply.getDefaultInstance()))
                   .setSchemaDescriptor(new WinterMethodDescriptorSupplier("returnFate"))
@@ -88,7 +88,7 @@ public final class WinterGrpc {
 
     /**
      */
-    public void returnFate(proto.WinterOuterClass.DateRequest request,
+    public void returnFate(proto.WinterOuterClass.Empty request,
         io.grpc.stub.StreamObserver<proto.WinterOuterClass.Reply> responseObserver) {
       asyncUnimplementedUnaryCall(getReturnFateMethod(), responseObserver);
     }
@@ -99,7 +99,7 @@ public final class WinterGrpc {
             getReturnFateMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                proto.WinterOuterClass.DateRequest,
+                proto.WinterOuterClass.Empty,
                 proto.WinterOuterClass.Reply>(
                   this, METHODID_RETURN_FATE)))
           .build();
@@ -126,7 +126,7 @@ public final class WinterGrpc {
 
     /**
      */
-    public void returnFate(proto.WinterOuterClass.DateRequest request,
+    public void returnFate(proto.WinterOuterClass.Empty request,
         io.grpc.stub.StreamObserver<proto.WinterOuterClass.Reply> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getReturnFateMethod(), getCallOptions()), request, responseObserver);
@@ -153,7 +153,7 @@ public final class WinterGrpc {
 
     /**
      */
-    public proto.WinterOuterClass.Reply returnFate(proto.WinterOuterClass.DateRequest request) {
+    public proto.WinterOuterClass.Reply returnFate(proto.WinterOuterClass.Empty request) {
       return blockingUnaryCall(
           getChannel(), getReturnFateMethod(), getCallOptions(), request);
     }
@@ -180,7 +180,7 @@ public final class WinterGrpc {
     /**
      */
     public com.google.common.util.concurrent.ListenableFuture<proto.WinterOuterClass.Reply> returnFate(
-        proto.WinterOuterClass.DateRequest request) {
+        proto.WinterOuterClass.Empty request) {
       return futureUnaryCall(
           getChannel().newCall(getReturnFateMethod(), getCallOptions()), request);
     }
@@ -206,7 +206,7 @@ public final class WinterGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_RETURN_FATE:
-          serviceImpl.returnFate((proto.WinterOuterClass.DateRequest) request,
+          serviceImpl.returnFate((proto.WinterOuterClass.Empty) request,
               (io.grpc.stub.StreamObserver<proto.WinterOuterClass.Reply>) responseObserver);
           break;
         default:

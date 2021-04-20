@@ -27,28 +27,28 @@ public final class AutumnGrpc {
   public static final String SERVICE_NAME = "Autumn";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<proto.AutumnOuterClass.DateRequest,
+  private static volatile io.grpc.MethodDescriptor<proto.AutumnOuterClass.Empty,
       proto.AutumnOuterClass.Reply> getReturnFateMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "returnFate",
-      requestType = proto.AutumnOuterClass.DateRequest.class,
+      requestType = proto.AutumnOuterClass.Empty.class,
       responseType = proto.AutumnOuterClass.Reply.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<proto.AutumnOuterClass.DateRequest,
+  public static io.grpc.MethodDescriptor<proto.AutumnOuterClass.Empty,
       proto.AutumnOuterClass.Reply> getReturnFateMethod() {
-    io.grpc.MethodDescriptor<proto.AutumnOuterClass.DateRequest, proto.AutumnOuterClass.Reply> getReturnFateMethod;
+    io.grpc.MethodDescriptor<proto.AutumnOuterClass.Empty, proto.AutumnOuterClass.Reply> getReturnFateMethod;
     if ((getReturnFateMethod = AutumnGrpc.getReturnFateMethod) == null) {
       synchronized (AutumnGrpc.class) {
         if ((getReturnFateMethod = AutumnGrpc.getReturnFateMethod) == null) {
           AutumnGrpc.getReturnFateMethod = getReturnFateMethod = 
-              io.grpc.MethodDescriptor.<proto.AutumnOuterClass.DateRequest, proto.AutumnOuterClass.Reply>newBuilder()
+              io.grpc.MethodDescriptor.<proto.AutumnOuterClass.Empty, proto.AutumnOuterClass.Reply>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "Autumn", "returnFate"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  proto.AutumnOuterClass.DateRequest.getDefaultInstance()))
+                  proto.AutumnOuterClass.Empty.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   proto.AutumnOuterClass.Reply.getDefaultInstance()))
                   .setSchemaDescriptor(new AutumnMethodDescriptorSupplier("returnFate"))
@@ -88,7 +88,7 @@ public final class AutumnGrpc {
 
     /**
      */
-    public void returnFate(proto.AutumnOuterClass.DateRequest request,
+    public void returnFate(proto.AutumnOuterClass.Empty request,
         io.grpc.stub.StreamObserver<proto.AutumnOuterClass.Reply> responseObserver) {
       asyncUnimplementedUnaryCall(getReturnFateMethod(), responseObserver);
     }
@@ -99,7 +99,7 @@ public final class AutumnGrpc {
             getReturnFateMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                proto.AutumnOuterClass.DateRequest,
+                proto.AutumnOuterClass.Empty,
                 proto.AutumnOuterClass.Reply>(
                   this, METHODID_RETURN_FATE)))
           .build();
@@ -126,7 +126,7 @@ public final class AutumnGrpc {
 
     /**
      */
-    public void returnFate(proto.AutumnOuterClass.DateRequest request,
+    public void returnFate(proto.AutumnOuterClass.Empty request,
         io.grpc.stub.StreamObserver<proto.AutumnOuterClass.Reply> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getReturnFateMethod(), getCallOptions()), request, responseObserver);
@@ -153,7 +153,7 @@ public final class AutumnGrpc {
 
     /**
      */
-    public proto.AutumnOuterClass.Reply returnFate(proto.AutumnOuterClass.DateRequest request) {
+    public proto.AutumnOuterClass.Reply returnFate(proto.AutumnOuterClass.Empty request) {
       return blockingUnaryCall(
           getChannel(), getReturnFateMethod(), getCallOptions(), request);
     }
@@ -180,7 +180,7 @@ public final class AutumnGrpc {
     /**
      */
     public com.google.common.util.concurrent.ListenableFuture<proto.AutumnOuterClass.Reply> returnFate(
-        proto.AutumnOuterClass.DateRequest request) {
+        proto.AutumnOuterClass.Empty request) {
       return futureUnaryCall(
           getChannel().newCall(getReturnFateMethod(), getCallOptions()), request);
     }
@@ -206,7 +206,7 @@ public final class AutumnGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_RETURN_FATE:
-          serviceImpl.returnFate((proto.AutumnOuterClass.DateRequest) request,
+          serviceImpl.returnFate((proto.AutumnOuterClass.Empty) request,
               (io.grpc.stub.StreamObserver<proto.AutumnOuterClass.Reply>) responseObserver);
           break;
         default:

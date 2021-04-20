@@ -27,28 +27,28 @@ public final class SummerGrpc {
   public static final String SERVICE_NAME = "Summer";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<proto.SummerOuterClass.DateRequest,
+  private static volatile io.grpc.MethodDescriptor<proto.SummerOuterClass.Empty,
       proto.SummerOuterClass.Reply> getReturnFateMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "returnFate",
-      requestType = proto.SummerOuterClass.DateRequest.class,
+      requestType = proto.SummerOuterClass.Empty.class,
       responseType = proto.SummerOuterClass.Reply.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<proto.SummerOuterClass.DateRequest,
+  public static io.grpc.MethodDescriptor<proto.SummerOuterClass.Empty,
       proto.SummerOuterClass.Reply> getReturnFateMethod() {
-    io.grpc.MethodDescriptor<proto.SummerOuterClass.DateRequest, proto.SummerOuterClass.Reply> getReturnFateMethod;
+    io.grpc.MethodDescriptor<proto.SummerOuterClass.Empty, proto.SummerOuterClass.Reply> getReturnFateMethod;
     if ((getReturnFateMethod = SummerGrpc.getReturnFateMethod) == null) {
       synchronized (SummerGrpc.class) {
         if ((getReturnFateMethod = SummerGrpc.getReturnFateMethod) == null) {
           SummerGrpc.getReturnFateMethod = getReturnFateMethod = 
-              io.grpc.MethodDescriptor.<proto.SummerOuterClass.DateRequest, proto.SummerOuterClass.Reply>newBuilder()
+              io.grpc.MethodDescriptor.<proto.SummerOuterClass.Empty, proto.SummerOuterClass.Reply>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
                   "Summer", "returnFate"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  proto.SummerOuterClass.DateRequest.getDefaultInstance()))
+                  proto.SummerOuterClass.Empty.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   proto.SummerOuterClass.Reply.getDefaultInstance()))
                   .setSchemaDescriptor(new SummerMethodDescriptorSupplier("returnFate"))
@@ -88,7 +88,7 @@ public final class SummerGrpc {
 
     /**
      */
-    public void returnFate(proto.SummerOuterClass.DateRequest request,
+    public void returnFate(proto.SummerOuterClass.Empty request,
         io.grpc.stub.StreamObserver<proto.SummerOuterClass.Reply> responseObserver) {
       asyncUnimplementedUnaryCall(getReturnFateMethod(), responseObserver);
     }
@@ -99,7 +99,7 @@ public final class SummerGrpc {
             getReturnFateMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                proto.SummerOuterClass.DateRequest,
+                proto.SummerOuterClass.Empty,
                 proto.SummerOuterClass.Reply>(
                   this, METHODID_RETURN_FATE)))
           .build();
@@ -126,7 +126,7 @@ public final class SummerGrpc {
 
     /**
      */
-    public void returnFate(proto.SummerOuterClass.DateRequest request,
+    public void returnFate(proto.SummerOuterClass.Empty request,
         io.grpc.stub.StreamObserver<proto.SummerOuterClass.Reply> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getReturnFateMethod(), getCallOptions()), request, responseObserver);
@@ -153,7 +153,7 @@ public final class SummerGrpc {
 
     /**
      */
-    public proto.SummerOuterClass.Reply returnFate(proto.SummerOuterClass.DateRequest request) {
+    public proto.SummerOuterClass.Reply returnFate(proto.SummerOuterClass.Empty request) {
       return blockingUnaryCall(
           getChannel(), getReturnFateMethod(), getCallOptions(), request);
     }
@@ -180,7 +180,7 @@ public final class SummerGrpc {
     /**
      */
     public com.google.common.util.concurrent.ListenableFuture<proto.SummerOuterClass.Reply> returnFate(
-        proto.SummerOuterClass.DateRequest request) {
+        proto.SummerOuterClass.Empty request) {
       return futureUnaryCall(
           getChannel().newCall(getReturnFateMethod(), getCallOptions()), request);
     }
@@ -206,7 +206,7 @@ public final class SummerGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_RETURN_FATE:
-          serviceImpl.returnFate((proto.SummerOuterClass.DateRequest) request,
+          serviceImpl.returnFate((proto.SummerOuterClass.Empty) request,
               (io.grpc.stub.StreamObserver<proto.SummerOuterClass.Reply>) responseObserver);
           break;
         default:

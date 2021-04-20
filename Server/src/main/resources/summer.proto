@@ -3,17 +3,12 @@ syntax = "proto3";
 option java_package = "proto";
 
 service Summer {
-
-  rpc returnFate (DateRequest) returns (Reply) {}
-
-}
-
-message DateRequest {
-
-  string date = 1;
-
+  rpc returnFate (Empty) returns (Reply) {}
 }
 
 message Reply {
   string fate = 1;
+}
+message Empty {
+
 }
