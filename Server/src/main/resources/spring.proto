@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option java_package = "proto";
+
+service Spring {
+
+  rpc returnFate (DateRequest) returns (Reply) {}
+
+}
+
+message DateRequest {
+
+  string date = 1;
+
+}
+
+message Reply {
+  string fate = 1;
+}
