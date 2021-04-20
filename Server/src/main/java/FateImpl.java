@@ -6,7 +6,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -16,14 +15,20 @@ public class FateImpl extends FateGrpc.FateImplBase
     private ArrayList<Fate> fates = new ArrayList<>();
 
 
-
     @Override
     public void returnFate(FateOuterClass.DateRequest request, StreamObserver<FateOuterClass.Reply> responseObserver)
     {
+        FateOuterClass.Reply.Builder reply = FateOuterClass.Reply.newBuilder();
+
         String input = request.getDate();
         if (validateDate(input) == false)
             responseObserver.onError(new Throwable("Input nu e bun"));
 
+        String fateName = getFateFromDate(new Date(input));
+        reply.setFate(fateName);
+
+        responseObserver.onNext(reply.build());
+        responseObserver.onCompleted();
     }
 
     public boolean validateDate(String date)
@@ -44,7 +49,6 @@ public class FateImpl extends FateGrpc.FateImplBase
         if (!matcher.find())
             return false;
 
-        
 
         return true;
     }
@@ -58,21 +62,21 @@ public class FateImpl extends FateGrpc.FateImplBase
             sc = new Scanner(file);
         } catch (FileNotFoundException e)
         {
-            sc=new Scanner(System.in);
+            sc = new Scanner(System.in);
             e.printStackTrace();
         }
 
-        while(sc.hasNext())
+        while (sc.hasNext())
         {
-            fates.add(new Fate(new Date(sc.next()),new Date(sc.next()),sc.next()));
+            fates.add(new Fate(new Date(sc.next()), new Date(sc.next()), sc.next()));
         }
     }
 
     public String getFateFromDate(Date date)
     {
-        for(Fate fate : fates)
+        for (Fate fate : fates)
         {
-            if(fate.dateIsThisFate(date))
+            if (fate.dateIsThisFate(date))
                 return fate.getName();
         }
         return "No fate for this date";
