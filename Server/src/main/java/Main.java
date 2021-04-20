@@ -1,13 +1,25 @@
+import io.grpc.Server;
+import io.grpc.ServerBuilder;
+
+import java.io.IOException;
+
 public class Main
 {
     public static void main(String[] args)
     {
-//        Date date = new Date("1/2/0000");
-//        date.setYear(2000-1900);
-//        System.out.println(date.getYear()+1900);
+        try {
+            Server server = ServerBuilder.forPort(8999).addService(new FateImpl()).build();
 
-        FateImpl fate = new FateImpl();
+            server.start();
 
-        fate.readFatesFromFile("src/main/resources/fates.txt");
+            System.out.println("Server started at " + server.getPort());
+
+            server.awaitTermination();
+
+        } catch (IOException e) {
+            System.out.println("Error: " + e);
+        } catch (InterruptedException e) {
+            System.out.println("Error: " + e);
+        }
     }
 }

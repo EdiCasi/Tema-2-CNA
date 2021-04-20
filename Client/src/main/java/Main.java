@@ -21,7 +21,13 @@ public class Main
         int option = -1;
         while (option != 0)
         {
-
+            try
+            {
+                Thread.sleep(1000);
+            } catch (InterruptedException e)
+            {
+                e.printStackTrace();
+            }
             System.out.print("Introduceti o optiune: ");
             Scanner sc=new Scanner(System.in);
             option=sc.nextInt();

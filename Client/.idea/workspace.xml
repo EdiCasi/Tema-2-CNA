@@ -5,13 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="41f7a5fb-2da6-4f4c-be91-44c6270ac49c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Client.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Server/src/main/java/FateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main/java/FateImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/proto/FateGrpc$FateBaseDescriptorSupplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/proto/FateGrpc$FateBaseDescriptorSupplier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/proto/FateGrpc$FateBlockingStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/proto/FateGrpc$FateBlockingStub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/proto/FateGrpc$FateFileDescriptorSupplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/proto/FateGrpc$FateFileDescriptorSupplier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/proto/FateGrpc$FateFutureStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/proto/FateGrpc$FateFutureStub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/proto/FateGrpc$FateImplBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/proto/FateGrpc$FateImplBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/proto/FateGrpc$FateMethodDescriptorSupplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/proto/FateGrpc$FateMethodDescriptorSupplier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/proto/FateGrpc$FateStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/proto/FateGrpc$FateStub.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/proto/FateGrpc$MethodHandlers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/proto/FateGrpc$MethodHandlers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/proto/FateGrpc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/proto/FateGrpc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,12 +42,26 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/Herciu Eduard Tema 1 CNA/Tema1-Server" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Edi\Desktop\Tema 2 CNA\Client\src\main\java" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Client" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
