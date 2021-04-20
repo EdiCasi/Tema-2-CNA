@@ -5,9 +5,33 @@ import proto.FateGrpc;
 import proto.FateOuterClass;
 
 import java.util.Scanner;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class Main
 {
+    public static boolean validateDate(String date)
+    {
+        Pattern datePattern = Pattern.compile("[0-3]?[0-9]/[0-1]?[0-9]/[1-2][0-9][0-9][0-9]");
+
+        Matcher matcher = datePattern.matcher(date);
+
+        if (date.length() > 10)
+            return false;
+
+        if (!Character.isDigit(date.charAt(0)))
+            return false;
+
+        if (!Character.isDigit(date.charAt(date.length() - 1)))
+            return false;
+
+        if (!matcher.find())
+            return false;
+
+
+        return true;
+    }
+
     public static void main(String[] args)
     {
         ManagedChannel channel = ManagedChannelBuilder.forAddress
@@ -39,6 +63,12 @@ public class Main
                     Scanner read = new Scanner(System.in);
                     System.out.print("Introduceti Data: ");
                     String date = read.nextLine();
+
+                    if(!validateDate(date))
+                    {
+                        System.out.println("Nu e buna data!");
+                        break;
+                    }
 
                     personStub.returnFate(
                             FateOuterClass.DateRequest.newBuilder().setDate(date).build(),
