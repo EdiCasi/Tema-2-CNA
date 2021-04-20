@@ -6,17 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="41f7a5fb-2da6-4f4c-be91-44c6270ac49c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/FateGrpc$FateBaseDescriptorSupplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/proto/FateGrpc$FateBaseDescriptorSupplier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/FateGrpc$FateBlockingStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/proto/FateGrpc$FateBlockingStub.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/FateGrpc$FateFileDescriptorSupplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/proto/FateGrpc$FateFileDescriptorSupplier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/FateGrpc$FateFutureStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/proto/FateGrpc$FateFutureStub.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/FateGrpc$FateImplBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/proto/FateGrpc$FateImplBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/FateGrpc$FateMethodDescriptorSupplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/proto/FateGrpc$FateMethodDescriptorSupplier.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/FateGrpc$FateStub.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/proto/FateGrpc$FateStub.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/FateGrpc$MethodHandlers.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/proto/FateGrpc$MethodHandlers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/proto/FateGrpc.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/proto/FateGrpc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/main/java/FateImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main/java/FateImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Server/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Server/src/main/resources/fates.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Server/src/main/resources/fates.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

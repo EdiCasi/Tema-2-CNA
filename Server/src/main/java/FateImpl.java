@@ -12,8 +12,13 @@ import java.util.regex.Pattern;
 
 public class FateImpl extends FateGrpc.FateImplBase
 {
-    private ArrayList<Fate> fates = new ArrayList<>();
+    private ArrayList<Fate> fates;
 
+    public FateImpl()
+    {
+        fates = new ArrayList<>();
+        readFatesFromFile("src/main/resources/fates.txt");
+    }
 
     @Override
     public void returnFate(FateOuterClass.DateRequest request, StreamObserver<FateOuterClass.Reply> responseObserver)
